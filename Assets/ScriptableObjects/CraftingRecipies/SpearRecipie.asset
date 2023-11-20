@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b8ccb6d3bfa861428aed5518a67fc0a, type: 3}
+  m_Name: SpearRecipie
+  m_EditorClassIdentifier: 
+  inputs:
+  - {fileID: 11400000, guid: 650eb28f178ef234f843e7f0069eeb1c, type: 2}
+  - {fileID: 11400000, guid: d130a81e070e4ac4bbf27b958c0b74a1, type: 2}
+  output: {fileID: 11400000, guid: 97ccf00b7058dcb44abe3350198846ad, type: 2}

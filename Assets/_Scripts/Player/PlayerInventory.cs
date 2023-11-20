@@ -17,10 +17,25 @@ public class PlayerInventory : MonoBehaviour
     public void AddOneItem(InventoryItemData itemDataToAdd)
     {
         inventorySystem.Add(new InventoryItem(itemDataToAdd));
+        playerInventoryUI.RerenderList();
     }
 
     //* Returns all items in players inventory
     public List<InventoryItem> GetAllItems() => inventorySystem.GetAllItems();
+
+    //* Returns true or false if player has the item
+    public bool ContainsItemForData(InventoryItemData itemData)
+    {
+        bool result = false;
+
+        inventorySystem.GetAllItems().ForEach(item =>
+        {
+            if (item.data.displayName == itemData.displayName) result = true;
+        });
+
+        return result;
+
+    }
 
     //* Removes an item from the list
     public void RemoveItem(InventoryItemData itemToRemove)

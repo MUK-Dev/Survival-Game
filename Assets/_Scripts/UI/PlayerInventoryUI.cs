@@ -25,9 +25,8 @@ public class PlayerInventoryUI : MonoBehaviour, IDropHandler
         {
             //? Get the data of the item being dropped
             inventoryItemUIObj.isValidDrop = true;
-            playerInventory.AddOneItem(inventoryItemUIObj.data);
             AvailableItems.Instance.PickOneItem(inventoryItemUIObj.data);
-            RerenderList();
+            playerInventory.AddOneItem(inventoryItemUIObj.data);
         }
     }
 
